@@ -1,53 +1,60 @@
-/* Paleta de colores */
+/* paleta de colores */
 :root {
-    --color-principal: #45618C; /* Color principal */
-    --color-secundario: #474E59; /* Color secundario */
-    --color-fondo: #1F2C40; /* Fondo oscuro */
-    --color-acentos: #6F7B8C; /* Color de acentos */
-    --color-destacado: #6A96D9; /* Color destacado */
+    --color-principal: #45618c;
+    --color-secundario: #474e59;
+    --color-fondo: #1f2c40;
+    --color-acentos: #6f7b8c;
+    --color-destacado: #6a96d9;
     
-    /* Fuentes */
-    --font-arvo: "Arvo", serif;
-    --font-libre-franklin: "Libre Franklin", sans-serif;
-    --font-karma: "Karma", serif;
+    /* fuentes */
+    --font-arvo: "arvo", serif;
+    --font-libre-franklin: "libre franklin", sans-serif;
+    --font-karma: "karma", serif;
 }
 
-/* Cargar fuentes desde Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karma&display=swap');
-
-/* Estilos generales del body con la fuente Karma */
+/* estilos generales */
 body {
     background-color: var(--color-secundario);
+    background-image: url('../assets/img/fondo.png');
+    background-size: cover; 
     font-family: var(--font-karma), serif;
     margin: 0;
     padding: 0;
     font-size: 16px;
     line-height: 1.5;
-    color: #f5f5f5; /* Color claro para el texto */
+    color: #f5f5f5;
 }
 
-/* Estilos de encabezado (h1) con la fuente Arvo */
+/* logo del navbar */
+.logo-navbar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+nav.navbar {
+    background-color: var(--color-principal);
+}
+
+/* encabezados */
 h1 {
     font-family: var(--font-arvo), serif;
-    font-weight: 700; /* Negrita para los títulos */
+    font-weight: 700;
     color: var(--color-destacado);
     text-align: center;
     margin: 0;
     padding: 20px 0;
 }
 
-/* Estilos de subtítulo (h2) con la fuente Libre Franklin */
 h2 {
     font-family: var(--font-libre-franklin), sans-serif;
-    font-weight: 400; /* Peso normal */
+    font-weight: 400;
     color: var(--color-acentos);
     text-align: center;
     margin-top: 40px;
 }
 
-/* Estilos de otros encabezados (h3) con la fuente Arvo */
 h3 {
     font-family: var(--font-arvo), serif;
     font-weight: 400;
@@ -55,69 +62,7 @@ h3 {
     text-align: center;
 }
 
-header {
-    background-color: var(--color-principal);
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-}
-/* Estilo de la navegación */
-.menu {
-    text-align: center;
-    padding: 10px;
-}
-
-.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    display: inline;
-    margin: 0 20px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.menu a:hover {
-    color: var(--color-destacado);
-}
-
-/* Estilo para las secciones de los skateparks */
-.izq, .cent, .der {
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-}
-
-.izq {
-    background-color: var(--color-destacado);
-    width: 30%;
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-.cent {
-    background-color: var(--color-destacado);
-    width: 30%;
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-.der {
-    background-color: var(--color-destacado);
-    width: 30%;
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-/* Estilos de pie de página */
+/* pie de página */
 footer {
     background-color: var(--color-principal);
     padding: 20px;
@@ -149,14 +94,67 @@ footer ul li a:hover {
     color: var(--color-destacado);
 }
 
+/* clases generales */
 .imagenesindex {
-    width: 60%
+    width: 60%;
+    display: block;
+    margin: 0 auto;
 }
 
-label{ 
-    color:grey;
+.title-border {
+    background-color: #343a40; /* Color de fondo igual al de la navbar */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 15px; /* Espacio dentro del borde */
+    display: inline-block; /* Para que el título tenga el tamaño adecuado */
+  }
+  
+  .title-border h2 {
+    color: white; /* Texto blanco para que contraste con el fondo oscuro */
+    margin: 0; /* Quitamos el margen por defecto de h2 */
+  }
+
+  /* Estilos para el formulario */
+form {
+    background-color: var(--color-secundario);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-input[
-    type = "radio"]
-    { display:none;}
+form .form-label {
+    color: #fff;
+}
+
+form .form-control {
+    border-radius: 8px;
+    background-color: var(--color-fondo);
+    color: #fff;
+    border: 1px solid var(--color-acentos);
+}
+
+form .form-select {
+    border-radius: 8px;
+    background-color: var(--color-fondo);
+    color: #fff;
+    border: 1px solid var(--color-acentos);
+}
+
+form .btn-primary {
+    background-color: var(--color-destacado);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form .btn-primary:hover {
+    background-color: var(--color-principal);
+}
+
+footer {
+    background-color: var(--color-principal);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}

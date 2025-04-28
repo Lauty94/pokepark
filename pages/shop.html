@@ -1,64 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokePark ¡Shop! </title>
-    <link rel="stylesheet" href="../Styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Karma&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pokepark shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karma&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>PokePark</h1>
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./Novedades.html">Novedades</a></li>
-                <li><a href="./shop.html">Shop</a></li>
-                <li><a href="./parks.html">Parks</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <h2 class="subtitulos">Bienvenido a nuestra tienda</h2>
-        <section class="productos">
-            <article class="producto">
-                <h3>Skateboard PokePark Pro</h3>
-                <img src="../assets/img/skateboard.jpg" width="200" height="200" alt="Skateboard PokePark Pro">
-                <p>¡Conduce el mejor skateboard de PokePark! Ideal para los más experimentados, con un diseño único.</p>
-                <p><strong>Precio: $120.000</strong></p>
-                <button>Agregar al carrito</button>
-            </article>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Igual que en index -->
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="../assets/img/logo.png" alt="Logo PokePark" class="logo-navbar">
+          pokepark
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="../index.html">inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./novedades.html">novedades</a></li>
+            <li class="nav-item"><a class="nav-link active" href="./shop.html">shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="./parks.html">parks</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-            <article class="producto">
-                <h3>Casco PokePark X</h3>
-                <img src="../assets/img/casco.jpg" width="200" height="200" alt="Casco PokePark X">
-                <p>Seguridad y confort para tus aventuras. Casco de alta calidad para cualquier skater.</p>
-                <p><strong>Precio: $22.000</strong></p>
-                <button>Agregar al carrito</button>
-            </article>
+  <main class="my-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">bienvenido a nuestra tienda</h2>
 
-            <article class="producto">
-                <h3>Protectores PokePark</h3>
-                <img src="../assets/img/protectores.jpg" width="200" height="200" alt="Protectores PokePark">
-                <p>Juego completo de protectores para tus codos, rodillas y muñecas. Protege tu cuerpo mientras te diviertes.</p>
-                <p><strong>Precio: $35.000</strong></p>
-                <button>Agregar al carrito</button>
-            </article>
-        </section>
-    </main>
+      <div class="row g-4">
 
-    <footer>
-        <h4>Seguinos en:</h4>
-        <ul>
-            <li><a href="https://www.facebook.com/tu-pagina">Facebook</a></li>
-            <li><a href="https://www.instagram.com/tu-pagina">Instagram</a></li>
-            <li><a href="https://www.twitter.com/tu-pagina">Twitter</a></li>
-        </ul>
-    </footer>
+        <!-- Producto 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 text-center">
+            <img src="../assets/img/skateboard.jpg" class="card-img-top" alt="skateboard pokepark pro">
+            <div class="card-body">
+              <h5 class="card-title">skateboard pokepark pro</h5>
+              <p class="card-text">¡conduce el mejor skateboard de pokepark! ideal para los más experimentados, con un diseño único.</p>
+              <p class="card-text"><strong>precio: $120.000</strong></p>
+              <button class="btn btn-primary">agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 text-center">
+            <img src="../assets/img/casco.jpg" class="card-img-top" alt="casco pokepark x">
+            <div class="card-body">
+              <h5 class="card-title">casco pokepark x</h5>
+              <p class="card-text">seguridad y confort para tus aventuras. casco de alta calidad para cualquier skater.</p>
+              <p class="card-text"><strong>precio: $22.000</strong></p>
+              <button class="btn btn-primary">agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 text-center">
+            <img src="../assets/img/protectores.jpg" class="card-img-top" alt="protectores pokepark">
+            <div class="card-body">
+              <h5 class="card-title">protectores pokepark</h5>
+              <p class="card-text">juego completo de protectores para tus codos, rodillas y muñecas. protege tu cuerpo mientras te diviertes.</p>
+              <p class="card-text"><strong>precio: $35.000</strong></p>
+              <button class="btn btn-primary">agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <h4>seguinos en:</h4>
+    <ul class="list-unstyled d-flex justify-content-center gap-3 mb-0">
+      <li><a href="#" class="text-white text-decoration-none">facebook</a></li>
+      <li><a href="#" class="text-white text-decoration-none">instagram</a></li>
+      <li><a href="#" class="text-white text-decoration-none">twitter</a></li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
