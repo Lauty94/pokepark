@@ -37,6 +37,10 @@ nav.navbar {
     background-color: var(--color-principal);
 }
 
+.w-fit-content {
+    width: fit-content;
+}
+
 /* encabezados */
 h1 {
     font-family: var(--font-arvo), serif;
