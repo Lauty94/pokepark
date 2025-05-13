@@ -55,3 +55,71 @@ body {
     background-color: $color-principal;
   }
     
+  .nav-animado {
+  @extend .animate__animated !optional;
+  @extend .animate__backInDown !optional;
+}
+
+.carousel-inner {
+  height: 600px;
+
+  .carousel-item {
+    height: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+// _parks.scss
+
+.descripcion {
+  background-color: $color-principal;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+  color: white; // texto legible sobre fondo oscuro
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .btn {
+    margin-top: 1rem;
+  }
+}
+
+.reseña {
+  background-color: $color-destacado;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  color: white;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    padding-left: 0.5rem;
+
+    li {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+
