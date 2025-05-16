@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #474e59;
   background-image: url("../assets/img/fondo.png");
@@ -123,6 +124,46 @@ form .btn-primary {
 }
 form .btn-primary:hover {
   background-color: #45618c;
+}
+
+.descripcion {
+  background-color: #45618c;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.descripcion h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.descripcion p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.descripcion .btn {
+  margin-top: 1rem;
+}
+
+.reseña {
+  background-color: #6a96d9;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  color: white;
+}
+.reseña h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.reseña ul {
+  padding-left: 0.5rem;
+}
+.reseña ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
